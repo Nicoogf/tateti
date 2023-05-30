@@ -3,15 +3,17 @@ import './Board.css'
 
 
 
-const Board = ({squares}) =>{
+const Board = ({squares , onClick , turn }) =>{
 
 
     const createSquares = values => (
         values.map( value => (
 
              <Square 
+                onClick = { ()=> onClick(value) }
                 value= { squares[value] } 
                 key={`square_${value}`}
+                turn = {turn}
              />
 
             ))
