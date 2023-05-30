@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import './App.css';
 import Board from './components/Board/Board';
-import Square from './components/Square/Square';
+
 
 const App = ()=>{ 
 
@@ -24,11 +24,14 @@ const checkForWinner = squares =>{
   } 
 
   return (
+
     <div className="container">
 
-      <Board squares={squares}
-             onClick={handleClick}
-             turn={turn}/>
+      <Board 
+          turn={turn}
+          squares={squares}
+          onClick={handleClick}
+      />
 
     </div>
   );
