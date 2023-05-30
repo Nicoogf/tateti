@@ -24,7 +24,7 @@
 }
 
 .square--O.winner{
-    animation:o-winner-animatio infinite .5s ease-in-out
+    animation:o-winner-animation infinite .5s ease-in-out
 }
 
 

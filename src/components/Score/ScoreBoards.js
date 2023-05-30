@@ -1,12 +1,12 @@
 import './ScoreBoard.css'
 
-const ScoreBoard = ( {scoreX, ScoreO}) =>(
+const ScoreBoard = ( {scoreX, scoreO}) =>(
 
     <div className='score-board'>
 
         <div> {scoreX} </div>
 
-        <div> {ScoreO} </div>
+        <div> {scoreO} </div>
 
     </div>
 

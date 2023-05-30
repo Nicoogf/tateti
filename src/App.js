@@ -18,8 +18,11 @@ const winningPositions = [
 const App = ()=>{ 
 
   const [turn , setTurn] = useState('X');
+
   const [squares, setSquares] = useState(Array(9).fill(null)) ;
-  const [winningSquares , setWinningSquares] = useState({});
+
+  const [winningSquares , setWinningSquares] = useState([]);
+
   const [score, setScore] =  useState({
     X:0,
     O:0,
@@ -31,7 +34,7 @@ const App = ()=>{
     setWinningSquares( [] ) ;
   }
 
-const checkForWinner = newSquares =>{
+  const checkForWinner = newSquares =>{
 
   for(let i = 0 ; i < winningPositions.length ; i++){
 
@@ -53,7 +56,7 @@ const checkForWinner = newSquares =>{
   }
 
   setTurn(turn === 'X' ? 'O' : 'X');
-}
+  } 
 
   const handleClick = square =>{
     let newSquares = [...squares];
@@ -78,6 +81,9 @@ const checkForWinner = newSquares =>{
 
   }
 
+
+
+
   return (
 
     <div className="container">
@@ -96,6 +102,9 @@ const checkForWinner = newSquares =>{
 
     </div>
   );
+
+
+
 }
 
 export default App;
