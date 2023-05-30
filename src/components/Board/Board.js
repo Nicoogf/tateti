@@ -7,6 +7,7 @@ const Board = ({squares , onClick , turn , winningSquares }) =>{
 
     const createSquares = values => (
         values.map( value => (
+            
 
              <Square 
                 winner  = {winningSquares.includes(value)}
@@ -37,6 +38,8 @@ const Board = ({squares , onClick , turn , winningSquares }) =>{
             <div className="row">
                 {  createSquares( [6,7,8] )  }
             </div>
+
+            
 
 
         </div>

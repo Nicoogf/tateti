@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './App.css';
 import Board from './components/Board/Board';
+import ScoreBoard from './components/Score/ScoreBoards';
 
 const winningPositions = [
   [0,1,2],
@@ -75,7 +76,6 @@ const checkForWinner = newSquares =>{
 
     setTimeout( reset , 2000)
 
-  
   }
 
   return (
@@ -87,6 +87,11 @@ const checkForWinner = newSquares =>{
           turn={turn}
           squares={squares}
           onClick={handleClick}
+      />
+
+      <ScoreBoard 
+          scoreO = {score.O}
+          scoreX = {score.X}
       />
 
     </div>
