@@ -11,10 +11,10 @@
     font-size: 2em;
     padding: 5px;
     font-weight: bold;
-    background-color: #4392f1;
+    background-color: #1a69c9;
 }
 
 .score-board div:first-child{
-    background-color: #cd493a ;
-    color:white;
+    background-color: #ad2e20 ;
+    color:gray;
 }
